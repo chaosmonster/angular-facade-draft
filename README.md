@@ -1,4 +1,5 @@
 # AngularFacadeDraft
+Use [bookmonkey api](https://github.com/workshops-de/bookmonkey-api) by [workshops.de](https://twitter.com/workshops_de) to provide a backend for this example.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
 

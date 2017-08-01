@@ -6,7 +6,8 @@
 </ul>
 
 <button (click)="addBook()">Add a book</button>
+<button (click)="toggleShowRaw()">Toggle Show Raw</button>
 
-<pre>
+<pre *ngIf="showRaw">
   {{books$ | async | json}}
 </pre>

@@ -14,6 +14,7 @@ export class BooksFacadeService {
 
   public books$ = this.store.select(fromRoot.selectBooks)
     .do(() => {
+      // this is called multiple times
       console.log('do');
     })
     .let((observable) => {
@@ -26,6 +27,8 @@ export class BooksFacadeService {
       // });
       return observable;
   });
+
+
 
   constructor(private store: Store<fromRoot.State>, private bookDataService: BookDataService) {
   }

@@ -8,6 +8,7 @@ import {BooksFacadeService} from '../services/books-facade.service';
 export class BookListComponent implements OnInit {
 
   public books$;
+  public showRaw = false;
 
   constructor(private booksFacadeService: BooksFacadeService) {
   }
@@ -29,6 +30,9 @@ export class BookListComponent implements OnInit {
         url: ''
       },
     });
+  }
+  toggleShowRaw() {
+    this.showRaw = !this.showRaw;
   }
 
 }

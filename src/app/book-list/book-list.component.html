@@ -6,3 +6,7 @@
 </ul>
 
 <button (click)="addBook()">Add a book</button>
+
+<pre>
+  {{books$ | async | json}}
+</pre>
